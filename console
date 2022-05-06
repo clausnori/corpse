@@ -12,7 +12,7 @@ from node import *
 from lib.common import cprint
 import inspect
 
-MODULES = ['account','tx','blockchain','miner','node']
+MODULES = ['account','tx','blockchain','ddos','node']
 
 def upper_first(string):
     return string[0].upper()+string[1:]
