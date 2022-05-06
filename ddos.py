@@ -30,7 +30,7 @@ def coinbase():
 def get_all_untransactions():
     UnTransactionDB().all_hashes()
 
-def mine():
+def ddos():
     """
     Main miner method.
     """
