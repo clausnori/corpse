@@ -12,7 +12,7 @@ from node import *
 from lib.common import cprint
 import inspect
 
-MODULES = ['account','tx','blockchain','ddos','node']
+MODULES = ['account','tx','blockchain','miner','node']
 
 def upper_first(string):
     return string[0].upper()+string[1:]
@@ -31,7 +31,7 @@ class Node():
         for t in NodeDB().find_all():
             cprint('Node',t)
 
-class DDoS():
+class Miner():
     def start(self, args):
         if get_account() == None:
             cprint('ERROR','Please create account before start miner.')
